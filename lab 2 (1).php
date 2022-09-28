@@ -31,7 +31,7 @@ class TinhToan implements PhepTinh {
         if (!$this->b == 0) {
             return $this->a + $this->b;
         } else {
-            return 'Không thực hiện được phép tính';
+            return 'Không chia được';
         }
     }
 }

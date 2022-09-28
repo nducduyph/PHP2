@@ -1,10 +1,10 @@
 <?php
 
 interface PhepTinh {
-    public function phepCong();
-    public function phepTru();
-    public function phepNhan();
-    public function phepChia();
+    public function Cong();
+    public function Tru();
+    public function Nhan();
+    public function Chia();
 }
 class TinhToan implements PhepTinh {
     private $a;
@@ -15,19 +15,19 @@ class TinhToan implements PhepTinh {
         $this->b = $b;
     }
 
-    function phepCong() {
+    function Cong() {
         return $this->a + $this->b;
     }
 
-    function phepTru() {
+    function Tru() {
         return $this->a - $this->b;
     }
 
-    function phepNhan() {
+    function Nhan() {
         return $this->a * $this->b;
     }
 
-    function phepChia() {
+    function Chia() {
         if (!$this->b == 0) {
             return $this->a + $this->b;
         } else {
@@ -39,7 +39,9 @@ class TinhToan implements PhepTinh {
 $demo = new TinhToan(2, 33);
 
 echo '<pre>';
-var_dump($demo->phepCong());
-var_dump($demo->phepTru());
-var_dump($demo->phepNhan());
-var_dump($demo->phepChia());
+var_dump($demo->Cong());
+var_dump($demo->Tru());
+var_dump($demo->Nhan());
+var_dump($demo->Chia());
+
+?>
